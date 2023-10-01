@@ -8,6 +8,7 @@ export const useUser = defineStore('user', {
   actions: {
     login() {
       this.isLoggedIn = true
+      useRouter().push('/')
     },
     logout() {
       this.isLoggedIn = false
